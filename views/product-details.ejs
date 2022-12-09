@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+    <%- include('component/nav')  %> 
+    <div class="container-xxl my-5">
+      <div class="row">
+        <div class="col-12">
+          <div class="card mb-3">
+            <div class="row">
+              <div class="col-4"> 
+                <img class="img-fluid" src=<%= urun.imgUrl %> alt=<%= urun.name %> />
+              </div>
+              <div class="col-8">
+                <div class="card-body">
+                  <div class="card-title">
+                    <h2><%= urun.name %></h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. In accusantium quam voluptate assumenda rem, facilis fugiat sequi maxime harum sunt excepturi suscipit nulla, non fugit. Voluptas, quasi consectetur ullam blanditiis pariatur est eaque accusamus, dolorem porro repellendus molestias cumque neque eligendi quis, esse perferendis modi incidunt facere minima. Soluta, ad!
+                    </p>
+                    <p>
+                      Fiyat: <%= urun.price %>₺ 
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+
+      
+
+    </div>
+ 
+   
+  </body>
+</html>
